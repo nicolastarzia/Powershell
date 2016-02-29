@@ -1,3 +1,6 @@
+Param(
+    [string]$DefaultDir
+     )
 $DefaultDir = "E:\my\JornalConsumidor"
 $strVersionFile = "version.txt"
 $strFile = Get-Content "$DefaultDir\$strVersionFile"
