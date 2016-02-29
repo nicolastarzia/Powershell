@@ -9,4 +9,4 @@ Limpar os sites que foram criados no IISExpress
 Copiar as ultimas versoes dos arquivos do SysInternals para a minha maquina
 
 # DownloadJornalConsumidorSJC.ps1
-Efetuar download do Jornal do Consumidor de SJC, controlando através do arquivo versao.txt
+Efetuar download do Jornal do Consumidor de SJC, controlando através do arquivo versao.txt, e adiciona automaticamente no EVERNOTE
