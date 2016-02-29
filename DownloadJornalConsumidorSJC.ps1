@@ -1,7 +1,6 @@
 Param(
     [string]$DefaultDir
      )
-$DefaultDir = "E:\my\JornalConsumidor"
 $strVersionFile = "version.txt"
 $strFile = Get-Content "$DefaultDir\$strVersionFile"
 $iVersao = [System.Decimal]::Parse($strFile)
@@ -31,6 +30,7 @@ Try
  } else {
    echo "$note" | & "$evernotePath\ENScript.exe" createNote /i $title /a $output
  }
+ Remove-Item "$DefaultDir\*" -include *.pdf
 }
 Catch
 {
