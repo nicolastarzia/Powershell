@@ -1,0 +1,3 @@
+[submodule "PoshInternals"]
+    path = "Powershell/PoshInternals"
+    url = "https://github.com/adamdriscoll/PoshInternals.git"
