@@ -1,5 +1,5 @@
 Param(
-        [string]$DefaultDir
+        [string]$DefaultDir="E:\my\JornalConsumidor"
      )
     function DownloadFileNews($DefaultDir){
         $strVersionFile = "version.txt"

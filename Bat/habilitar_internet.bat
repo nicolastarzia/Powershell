@@ -1,15 +1,13 @@
 @echo off
 REM ! CHANGE THIS TO  ! \
 SET MyInterfaceWIFI=Wi-Fi
-SET MyInterfaceLAN=Ethernet
+SET MyInterfaceLAN= Ethernet
 REM ! MATCH YOUR NEED ! /
 
 echo Active Routes:
 echo Network Destination        Netmask          Gateway       Interface  Metric
 
 route PRINT | findstr /C:" 0.0.0.0"
-
-echo Finding  "%MyInterfaceWIFI%"...
 
 FOR /f "tokens=1" %%* IN (
    'netsh interface ipv4 show interfaces 
@@ -30,6 +28,11 @@ FOR /f "tokens=3" %%* IN (
    'netsh interface ipv4 show config "%MyInterfaceLAN%"
     ^| findstr /R /C:"Default Gateway"'
    ) DO SET "TheGatewayLAN=%%*"
+
+
+echo "InterfaceWifi: %MyInterfaceWIFI% GatewayWifi: %TheGatewayWIFI%"
+echo "InterfaceLAN: %MyInterfaceLAN% GatewayLAN: %TheGatewayLAN%"
+pause
 
 
 route DELETE 0.0.0.0
