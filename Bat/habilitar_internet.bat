@@ -44,4 +44,4 @@ route ADD 10.161.0.0 MASK 255.255.0.0 %TheGatewayLAN% ^
    METRIC 5 IF %MyInterfaceLAN%
 
 route PRINT | findstr /C:"%TheGatewayWIFI%"
-route print | findstr /C:"%TheGatewayLAN%"
+route PRINT | findstr /C:"%TheGatewayLAN%"
