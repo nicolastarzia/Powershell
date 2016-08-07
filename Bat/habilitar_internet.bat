@@ -36,10 +36,16 @@ pause
 
 
 route DELETE 0.0.0.0
+<<<<<<< HEAD
 route DELETE 10.161.0.0
 
 route ADD 0.0.0.0 MASK 0.0.0.0 %TheGatewayWIFI% ^
    METRIC 10 IF %MyInterfaceWIFI%
+=======
+
+route ADD 0.0.0.0 MASK 0.0.0.0 %TheGatewayWIFI% ^
+   METRIC 5 IF %MyInterfaceWIFI%
+>>>>>>> ab4e67cd0bc55b5fd89cc420ae5538c2d438ac04
 
 route ADD 10.161.0.0 MASK 255.255.0.0 %TheGatewayLAN% ^
    METRIC 5 IF %MyInterfaceLAN%
