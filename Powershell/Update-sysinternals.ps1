@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ###########################################################################
-=======
-﻿###########################################################################
->>>>>>> ab4e67cd0bc55b5fd89cc420ae5538c2d438ac04
 #
 # NAME: Update-sysinternals.ps1
 #
@@ -16,11 +12,7 @@
 ###########################################################################
 
 
-<<<<<<< HEAD
 function Update-SysinternalsHTTP ($ToolsLocalDir = "e:\my\sysinternals")  
-=======
-function Update-SysinternalsHTTP ($ToolsLocalDir = "c:\temp\sys")  
->>>>>>> ab4e67cd0bc55b5fd89cc420ae5538c2d438ac04
 { 
 	if (Test-Path $ToolsLocalDir){ 
    		cd $ToolsLocalDir
@@ -75,9 +67,3 @@ cls
 "Update started..."
 
 Update-Sysinternalshttp -ToolsLocalDir "e:\my\sysinternals"
-
-<<<<<<< HEAD
-"The End"
-=======
-"The End"
->>>>>>> ab4e67cd0bc55b5fd89cc420ae5538c2d438ac04
